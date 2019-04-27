@@ -1,14 +1,212 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-.icon-block {
-  padding: 0 15px;
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.icon-block .material-icons {
-	font-size: inherit;
+
+body {
+    height: 3000px;
+}
+
+header {
+    height: 112px;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.secondary {
+    background-color: deepskyblue;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #fff; 
+    transition: all 0.5s ease-in;
+}
+
+header nav {
+    float: right;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/slider1.jpg');
+    background-size: 100% 100%;
+}
+
+.slider, .slider ul, .slider ul li {
+    height: 710px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.slider h2 {
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span {
+    color: orange;
+}
+
+.slider a {
+    padding: 10px 40px;
+    margin-right: 10px;
+}
+
+.slider a.btn-half {
+    background-color: deepskyblue;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-half:hover {
+    background-color: dodgerblue;
+}
+
+.slider a.btn-full {
+    background-color: orange;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-full:hover {
+    background-color: #e67e22;
+}
+
+.slider i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.intro-area {
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.sub-heading {
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before {
+    width: 24%;
+    margin-left: -12%;
+}
+
+.sub-heading:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p {
+    color: #818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block {
+    position: relative;
+    background: #f7f7f7;
+    margin: 50px 0px 0px;
+    padding: 70px 25px 40px;
+    text-align: center;
+}
+
+.intro-block:hover, .intro-block.active {
+    background: #0aade1
+}
+
+.intro-block:hover {
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -ms-transition: .6s ease;
+    -o-transition: .6s ease;
+    transition: .6s ease;
+}
+
+.intro-block .intro-icon {
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fas {
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background: deepskyblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #cceef9;
+}
+
+.intro-block:hover .fas, .intro-block.active .fas {
+    background: white;
+    color: deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: deepskyblue;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.intro-block p {
+    color: #505050;
 }
