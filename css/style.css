@@ -489,3 +489,31 @@ header nav ul li a:hover {
     padding-top: 10px;
 }
 
+.team-block:hover .team-desc {
+    background-color: deepskyblue;
+
+    color: white;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.team-block:hover .title h3, .team-block:hover .title span {
+    color: white;
+    transition: .3s ease;
+}
+
+.team-block:hover .team-desc p {
+    color: #f9f9f9;
+    transition: .3s ease;
+}
+
+.team-block:hover .team-social-network i {
+    background-color: deepskyblue;
+    color: white;
+    border-color: white;
+    transition: .3s ease;
+}
+
