@@ -570,3 +570,8 @@ footer {
     color: white;
 }
 
+.white span {
+    color: red;
+    font-size: 20px;
+}
+
